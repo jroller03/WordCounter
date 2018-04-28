@@ -16,9 +16,9 @@ A website created with C# and HTML where a user can submit a string sentence and
 | **Program Directs you to homepage for input** | User input: "Sally sell sea shells by the sea shore. "word: Sally"" | Output: "Word Counter = 1" |
 | **No Input**| User Input: "sentence: "" word:""" | Output: "0" |
 | **Partial Match**| Input: "sentence: "back" "b" | Output: "0" |
-| **Incorrect Input** | Input: "sentence: "apple" word: "5"" | Output: "will not run" |
+| **Incorrect Input** | Input: "sentence: "apple" word: "3"" | Output: "will not run" |
 | **Multiple word match** | Input: "sentence: "apple bags of apple" word: "apple"" | Output: "2" |
-
+| **No Match** | Input: "sentence: "Practice makes perfect" word: "ball"" | Output: "0" |
 
 ## Setup/Installation Requirements
 
