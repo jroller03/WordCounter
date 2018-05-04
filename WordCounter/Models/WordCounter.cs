@@ -1,10 +1,18 @@
 using System;
+using WordCounterApp.Models;
+using System.Collections.Generic;
+using System.IO;
 
-namespace WordCounter
+
+namespace WordCounterApp.Models
 {
   public class WordCounter
   //RepeatCounter class
   {
+    private string _word;
+    // private int _wordCount;
+    private string[] _inputStringArray;
+
     public int CountWordsTest(string Word, string[] InputStringArray)
     {
       int WordCounter=0;
@@ -28,5 +36,29 @@ namespace WordCounter
         return WordCounter;
       }
     }
+    public WordCounter(string Word, string[] InputStringArray)
+    {
+      _word = Word;
+      _inputStringArray = InputStringArray;
+
+    }
+
+    public void SetWord(string newWord)
+    {
+      _word = newWord;
+    }
+    public string GetWord()
+    {
+      return _word;
+    }
+    public void SetInputStringArray(string[] newInputStringArray)
+    {
+      _inputStringArray = newInputStringArray;
+    }
+    public string[] GetInputStringArray()
+    {
+      return _inputStringArray;
+    }
+
   }
 }
